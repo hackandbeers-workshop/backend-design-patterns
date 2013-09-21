@@ -1,0 +1,12 @@
+<phpunit colors="true">
+    <testsuites>
+        <testsuite name="My Test Suite">
+            <directory>./patterns</directory>
+        </testsuite>
+    </testsuites>
+     <groups>
+        <exclude>
+            <group>inactive</group>
+        </exclude>
+    </groups>
+</phpunit>
