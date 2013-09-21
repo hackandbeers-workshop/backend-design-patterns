@@ -8,13 +8,13 @@ class Singleton
 
     public function getInstance()
     {
-        if (empty(static::$instance)) {
-            static::$instance = new static();
+        if (empty(self::$instance)) {
+            self::$instance = new self();
         }
         return self::$instance;
     }
 
-    private function __clone{}
+    private function __clone(){}
 
     public function sayHello()
     {
